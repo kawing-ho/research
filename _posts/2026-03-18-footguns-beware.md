@@ -310,7 +310,7 @@ If you can see where this is going, this tool handles both frontend and backend 
 
 ### How bad is it?
 
-Currently, a sample GitHub [search]([[[https://github.com/search?q=path%3A%2Fcapacitor.config.%28ts%7Cjs%7Cjson%29%24%2F+AND+](https://github.com/search?q=path%3A%2Fcapacitor.config.%28ts%7Cjs%7Cjson%29%24%2F+AND+%2F%5B%27%22%5D%3FloggingBehavior%5B%27%22%5D%3F%3A+*%5B%27%22%5Dproduction%5B%27%22%5D%2F&type=code](https://github.com/search?q=path%3A%2Fvite%5C.config%5C.%5Btj%5Ds%2F+%2Fimport+%5C%7B+%5B%5E%7B%5D*defineConfig%5B%5E%7D%5D*%5C%7D+from+%5B%27%22%5Dvite%5B%27%22%5D%2F+AND+%2FloadEnv%5C%28.*%2C%5B%27%22%5D%5B%27%22%5D%5C%29%2F+AND+%2Fprocess.env%5B%5E%5C.%5D%2F&type=code](https://github.com/search?q=path%3A%2Fvite%5C.config%5C.%5Btj%5Ds%2F+%2Fimport+%5C%7B+%5B%5E%7B%5D*defineConfig%5B%5E%7D%5D*%5C%7D+from+%5B%27%22%5Dvite%5B%27%22%5D%2F+AND+%2F%5B%22%27%5Dprocess.env%5B%27%22%5D%3A.*process.env%2F&type=code)))){:target="_blank"} reveals ~5.2k public repos using this configuration:
+Currently, a sample GitHub [search](https://github.com/search?q=path%3A%2Fvite%5C.config%5C.%5Btj%5Ds%2F+%2Fimport+%5C%7B+%5B%5E%7B%5D*defineConfig%5B%5E%7D%5D*%5C%7D+from+%5B%27%22%5Dvite%5B%27%22%5D%2F+AND+%2F%5B%22%27%5Dprocess.env%5B%27%22%5D%3A.*process.env%2F&type=code){:target="_blank"} reveals ~5.2k public repos using this configuration:
 
 ![footgun-capacitor](/assets/images/footgun-vitejsprocessenv.png)
 > However, this doesn't account for whether the repos include `console.log(process.env)`. I grabbed a sample size of 120+ repos from GitHub search and grepped for any such instances but found none.
