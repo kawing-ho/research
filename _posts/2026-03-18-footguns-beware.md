@@ -417,7 +417,7 @@ The steps for testing and reproduction are basically the same as for above:
 
 ### How bad is it?
 
-Currently, a sample GitHub [search](https://github.com/search?q=path%3A%2Fvite%5C.config%5C.%5Btj%5Ds%2F+%2Fimport+%5C%7B+%5B%5E%7B%5D*defineConfig%5B%5E%7D%5D*%5C%7D+from+%5B%27%22%5Dvite%5B%27%22%5D%2F+AND+%2FloadEnv%5C%28.*%2C%5B%27%22%5D%5B%27%22%5D%5C%29%2F+AND+%2Fprocess.env%5B%5E%5C.%5D%2F&type=code){:target="_blank"} reveals ~81 public repos using this configuration:  
+Currently, a sample GitHub [search](https://github.com/search?q=path%3A%2Fvite%5C.config%5C.%5Btj%5Ds%2F+%2F%5B%27%22%5Dprocess.env%5B%27%22%5D%5Cs*%3A.%5Cs*env%2F+AND+%2FloadEnv%5C%28.*%2C%5Cs*%5B%27%22%5D%5B%27%22%5D%5C%29%2F&type=code){:target="_blank"} reveals ~1.9K public repos using this configuration:  
 ![footgun-loadenv](/assets/images/footgun-vitejsloadenv.png)
 
 <div class="divider"></div>
