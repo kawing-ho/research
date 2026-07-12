@@ -1,9 +1,9 @@
 ---
 layout: post
 date: 2026-03-18
-title: Footguns Beware
+title: "Footguns Beware: ViteJS"
 description: Vulnerable conditions that are a sum of its parts.
-pin: true
+pin: false
 categories: [Research]
 tags: [vitejs]
 image:
@@ -13,7 +13,7 @@ image:
 
 ## Background
 
-I  discovered through a previous pentest two vulnerable behaviours which stemmed from developer footguns, which I'll share in depth below.
+I discovered through a previous pentest two vulnerable behaviours which stemmed from developer footguns, which I'll share in depth below.
 
 One related to ViteJS was notoriously hard to reproduce, which led me down a path to reading countless GitHub issues and online articles. This led to a subsequent observation for ViteJS which I have included for brevity. 
 
